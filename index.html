@@ -15,30 +15,13 @@
  * Released under the Unlicense, and dedicated to the public domain.
 **/
 #audio-overlay{position:fixed;top:0;right:0;left:0;bottom:0;z-index:100000;background:#111}.lds-ring{display:block;position:relative;top:20%;margin:auto;width:20em;height:20em}.lds-ring div{box-sizing:border-box;display:block;position:absolute;width:18em;height:18em;margin:6px;border:6px solid #fff;border-radius:50%;-webkit-animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border-color:#fff transparent transparent transparent}.lds-ring div:nth-child(1){-webkit-animation-delay:-.45s;animation-delay:-.45s}.lds-ring div:nth-child(2){-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-ring div:nth-child(3){-webkit-animation-delay:-.15s;animation-delay:-.15s}@-webkit-keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}input#audio-volume{width:100%;margin:2em 0}span#vol-title{position:relative;bottom:-1em;font-size:1rem;float:left}tw-link#audio-mute{display:inline-block;padding:.3em;width:90%;text-decoration:none;color:#111;background:#eee;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid #000}tw-link#audio-mute:hover{opacity:.8}tw-link#audio-mute:active{opacity:.6}tw-link#audio-mute span{display:inline-block;width:1em;position:relative;height:1em;top:.2em;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAABF0lEQVR4Ae2VJVREYRSEB3ftuFUaLhF6I22iF7TgLr1XvAc849CwiBac9Xtm3e97cefp/Pec7+mdH0mZrGtMoBomyAEHfjGHXKg07gNxeUS3BuMAqGZswE7YcOIYgqgG7BFlSQgTAgKysC2jNjQmghFQCOpMxq+QmQgmFATU4kcq/YlgfKB1lALUqFSukRIbEwpy4BTZPM/Bu9TaQ362KAsl56sAtSR+Sgv6RCFdr/gjBYiuj65c3J0eNEmXz95TgybocvmoJj3avf5l59L1iD/WglZCP7/uh8zgeQ6epdahaZENFIPCCFvEYNPW4JdNazBGzhkj6caCbSc02DRRu0+8RR/+rb7wx6D505HxCVKvG0zpp+yknHe8MBDkT/s8AAAAAElFTkSuQmCC);background-size:contain}tw-link#audio-mute.muted span{right:4px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAASElEQVR4Ae3WsQ0AMAjAsJ7ez9MTGEmlRGL3BJzPq6prw2DDYMNgw2DDYMOwh1kAMUygQIEC2RejANVxnVE9aDOqJ39GVZWqB5Z3r1ndBX5oAAAAAElFTkSuQmCC)}div#audio-volume{float:left}div#audio-controls{font:100% Georgia,serif;font-size:1.5em;position:fixed;width:8em;height:100%;padding:1em 2em;z-index:10000;top:0;left:0;bottom:0;background:#333;color:#eee;transition:left .3s;text-align:center}div#audio-controls.closed{left:-10.5em}div#audio-controls tw-link#audio-panel-toggle{display:inline-block;width:1.5em;position:absolute;height:1.5em;top:0;right:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-decoration:none;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAYklEQVR4Ae3MsQFAMAAEQMDEagCgN4EuVTrbPcACeUBugDNeSdMQomI0PmYdTEYD9DA5jcVoBKuxGY1kNQ6jGRSaGaIj8gw1aI/KYVUSNqsSzMpiVT2zMjlVN0fqVW5o2luMGHqkQmD9cPYAAAAASUVORK5CYII=);background-size:contain}div#audio-controls.closed tw-link#audio-panel-toggle{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAZElEQVR4Ae3TpwGAMBQAUfrEeHB0cDhcXBSO7ehlgBw9N8BL/YZO95r6uA/UEbOv+ylfHRJ9z1BWLynKJqmWohyS6ijKOygKCpmjZYqXTTA2xUiCsShGAMw8/Q3ArFgFMHek0w3WCaR74eO2YQAAAABJRU5ErkJggg==)}@media screen and (max-width:800px){div#audio-controls.closed{left:-12em}div#audio-controls.closed tw-link#audio-panel-toggle{right:-1.5em}}div#story-menu{margin:1em 0}tw-link.story-menu{width:100%;display:block;font-weight:400;background:#ccc;font-size:.9em;padding:.1em 0;color:#111;border:1px solid #333}tw-link.story-menu.hide{display:none}tw-link.story-menu:hover{opacity:.8}tw-link.story-menu:active{opacity:.6}input[type=range].hal{-webkit-appearance:none;width:100%;margin:2.25px 0}input[type=range].hal:focus{outline:0}input[type=range].hal::-webkit-slider-runnable-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-webkit-slider-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;-webkit-appearance:none;margin-top:-2.25px}input[type=range].hal:focus::-webkit-slider-runnable-track{background:#444}input[type=range].hal::-moz-range-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-moz-range-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer}input[type=range].hal::-ms-track{width:100%;height:15.5px;cursor:pointer;background:0 0;border-color:transparent;color:transparent}input[type=range].hal::-ms-fill-lower{background:#000;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-fill-upper{background:#111;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;height:15.5px}input[type=range].hal:focus::-ms-fill-lower{background:#111}input[type=range].hal:focus::-ms-fill-upper{background:#444}
-/** End of HAL code */
-
-tw-story[tags~="Gruppe"] {
- background-image:url("https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/gh-pages/Gruppenbild%20Medienprojekt.jpg");
- background-size:cover;
-}
-tw-story[tags~="Matheo"] {
- background-image:url("https://github.com/interaktiveGeschichte/Geschichte/blob/main/Steckbrief%20M.jpg?raw=true");
- background-size:cover;
-}
-
-
-img {
-	max-width: 100%;
-  	max-height: 100%;
-}
-
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">/**
+/** End of HAL code */</style><script role="script" id="twine-user-script" type="text/twine-javascript">/**
  * Harlowe Audio Library (HAL), by Chapel, v2.2.1
  * for Harlowe 2.1.0 and higher
  * Released under the Unlicense, and dedicated to the public domain.
 **/
 ;!function(e){(jQuery.browser=jQuery.browser||{}).mobile=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(e)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(e.substr(0,4))}(navigator.userAgent||navigator.vendor||window.opera),function(){"use strict";window.Fast={filter:function(e,t){for(var o=e.length,n=[],a=0;a<o;a++)t(e[a],a,e)&&n.push(e[a]);return n},forEach:function(e,t){for(var o=e.length,n=0;n<o;n++)t(e[n],n,e)},map:function(e,t){for(var o=e.length,n=new Array(o),a=0;a<o;a++)n[a]=t(e[a],a,e);return n},find:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return e[n]},findIndex:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return n;return-1},some:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return!0;return!1}}}(),window.Chapel=window.Chapel||{},window.Chapel.options={preload:!0,loadDelay:0,muteOnBlur:!0,startingVol:.5,persistPrefs:!0,globalA:!0,showControls:!0,sidebarStartClosed:!0,volumeDisplay:!1,trackLoadLimit:500,totalLoadLimit:8e3,debug:!1},window.Chapel.debug=function(){Chapel.options.debug&&console.log.apply(null,arguments)},function(){"use strict";var n=$("tw-storydata"),o=/(.+?):(.+)/,t=/[\r\n]+/,a=/^["']/,r=/["']$/;function e(e){return Fast.map(Fast.filter(e.split(t),function(e){return e&&e.trim()&&e.includes(":")}),function(e){return e.trim()})}function i(e){return e.trim().replace(a,"").replace(r,"").trim()}function s(e){var t=e.match(o);return t instanceof Array?{key:i(t[1]),value:i(t[2])}:e}var u,l,c,p=n.find('tw-passagedata[name="hal.tracks"]'),d=null;p.length&&(u=e(p.text()),l=[],c=[],Fast.forEach(u,function(e){var t,o=s(e);"string"==typeof o&&c.push(o),l.push([o.key,(t=o.value,Fast.map(t.split(","),i))])}),c.length&&console.error("Some track definitions could not be parsed:\n"+c.join("\n")+"\nPlease check these definitions and try again."),d=new Map(l));var m,h,f=n.find('tw-passagedata[name="hal.config"]'),g=null;function y(e){var t=n.attr("format-version");if(e)return t;var o=t.split(".")[0],o=Number(o);return Number.isNaN(o)&&(o=3),o<1&&(o=3),o}f.length&&(m=e(f.text()),h={},Fast.forEach(Fast.map(m,function(e){return s(e)}),function(e){h[e.key]=e.value}),g=h),g&&Fast.forEach(Object.keys(g),function(e){var t=e,o=h[e],n=typeof Chapel.options[e];"boolean"==n?"true"===o?Chapel.options[t]=!0:"false"===o&&(Chapel.options[t]=!1):"number"==n?(o=Number(o),Number.isNaN(o)||(Chapel.options[t]=o)):"string"==n&&o&&(Chapel.options[t]=o)});var w=require("macros");if(window.Chapel=window.Chapel||{},window.Chapel.Macros={add:function(n){n&&"object"==typeof n&&Fast.forEach(Object.keys(n),function(e){var t,o;o=n[t=e],w.add(t,function(){var e=[].slice.call(arguments).slice(1),t=o.apply(null,e);return"string"==typeof t||"boolean"==typeof t||"number"==typeof t?t:""},w.TypeSignature.zeroOrMore(w.TypeSignature.Any))})}},window.Chapel.Get={version:y(),isHarlowe3OrLater:3<=y(),storyTitle:n.attr("name"),IFID:n.attr("ifid"),fromPassage:d},Chapel.debug("Harlowe Version -> ",y(!0)),Chapel.debug("Harlowe Major Version -> ",Chapel.Get.version),Chapel.debug("Story Title -> ",Chapel.Get.storyTitle),Chapel.debug("Story IFID -> ",Chapel.Get.IFID),Chapel.Get.version<2)throw new Error("The Harlowe Audio Library is only designed to work with Harlowe 2 and 3; you appear to be using Harlowe 1 or an otherwise invalid story format.","get.js -> initialization",176);Chapel.options.storagekey="%%hal-"+Chapel.Get.IFID+"-{"+Chapel.Get.storyTitle+"}",Chapel.debug("Storage Key -> ",Chapel.options.storagekey)}(),function(){"use strict";var t=Chapel.options,e=function(e,t){if(window.localStorage)try{e=""+e,"string"!=typeof t&&(t=JSON.stringify(t)),window.localStorage.setItem(e,t)}catch(e){console.error(e)}},o=function(e){if(window.localStorage)try{return e=""+e,window.localStorage.getItem(e)}catch(e){console.error(e)}},n=function(e){if(window.localStorage)try{e=""+e,window.localStorage.removeItem(e)}catch(e){console.error(e)}},a={loaded:[],classes:{},master:{volume:t.startingVol,mute:!1},groups:{playing:[],looping:[],custom:{}},mute:function(e){a.master.mute=!!e,$(document).trigger({type:":master-mute",mute:!!e})},isMuted:function(){return!!a.master.mute},volume:function(e){e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),a.master.volume=e),$(document).trigger({type:":master-volume",volume:e})},getVolume:function(){return a.master.volume},stopAll:function(){a.classes.Track&&Fast.forEach(a.classes.Track.list,function(e){e.stop()})},audioPlaying:function(){return!!a.groups.playing.length},savePrefs:function(){e(t.storagekey,a.master)},loadPrefs:function(){var e=o(t.storagekey);e&&"object"==typeof e&&e.hasOwnProperty("volume")&&"number"==typeof e.volume&&e.hasOwnProperty("mute")&&"boolean"==typeof e.volume&&(delete a.master,a.master=e)},clearPrefs:function(){n(t.storagekey)}},r={track:[":available",":loaded",":play",":stop",":mute",":volume"],master:[":master-mute",":master-volume"]};var i=r.track.concat(r.master);function s(e,t){if(!e||"string"!=typeof e||!e.trim())return null;var o=Fast.filter(Fast.map(e.split(" "),function(e){return":"!==(e=e.split(".")[0])[0]&&(e=":"+e),e+".userland"}),function(e){return t?i.includes(e):r.track.includes(e)}).join(" ");return o&&o.trim()?o:null}a.data={parseEvent:s,bail:function(e){throw new Error(e,"audio.js -> bail()",140)}},a.on=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).on(e,t):console.error("Chapel.Audio.on() -> invalid callback")},a.one=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).one(e,t):console.error("Chapel.Audio.one() -> invalid callback")},a.off=function(e){(e=s(e,!0))&&$(document).off(e)},t.persistPrefs&&($(document).on(":master-mute",a.savePrefs),$(document).on(":master-volume",a.savePrefs)),$(document).on(":play",function(e){e.track.addToGroup("playing")}),$(document).on(":stop",function(e){e.track.removeFromGroup("playing")}),t.muteOnBlur&&$(window).on("blur",function(){a.isMuted()||(a.mute(!0),$(window).one("focus",function(){a.mute(!1)}))}),a.parseEvent=s,window.Chapel=window.Chapel||{},window.Chapel.Audio=a}(),function(){"use strict";var r=Chapel.Audio,o=r.data.pareEvent,a=r.data.bail,i=Chapel.options,t=$(document.createElement("div")).attr("id","audio-container").css("display","none").appendTo(document.body),s={aac:"audio/aac",caf:"audio/x-caf","x-caf":"audio/x-caf",mp3:'audio/mpeg; codecs="mp3"',mpeg:'audio/mpeg; codecs="mp3"',m4a:"audio/mp4",mp4:"audio/mp4","x-m4a":"audio/mp4","x-mp4":"audio/mp4",oga:"audio/ogg",ogg:"audio/ogg",opus:'audio/ogg; codecs="opus"',wav:"audio/wav",wave:"audio/wav",weba:"audio/webm",webm:"audio/webm"};function u(e,t,o){this instanceof u||a("Track: called without `new` operator"),e||a("Track: no id specified"),"string"!=typeof e&&a("Track: track id is not a string"),t&&(!Array.isArray(t)||t.length)||a("Track: no sources specified"),o?t=[].slice.call(arguments).slice(1):"string"==typeof t&&(t=[t]);var n=$(document.createElement("audio"));Fast.forEach(t,function(e){var t,o;$(document.createElement("source")).attr({src:e,type:(t=e.split("."),(o=t[t.length-1]).includes("?")&&(o=o.split("?")[0]),o=o.toLowerCase().trim(),Object.keys(s).includes(o)||a('Track: unsupported file type "'+o+'"'),s[o])}).appendTo(n)}),n.attr({"data-track":"id","data-volume":1,"data-mute":!1}).one("canplaythrough.hal",function(){r.loaded.push(e)}),i.preload&&n.attr("preload","auto"),n[0].volume=+r.master.volume,this.id=e,this.$el=n,this.unwrap=n[0],this.sources=t}Object.assign(u,{list:[],is:function(e){return e instanceof u},has:function(t){return Fast.some(u.list,function(e){return e.id===t})},emit:function(e,t){$(document).trigger({type:e,track:t}),t.emit(e)},add:function(e,t,o){o&&(t=[].slice.call(arguments).slice(1));var n=new u(e,t);return u.list.push(n),n.$el.on("canplay",function(){u.emit(":available",n)}),n.$el.on("canplaythrough",function(){u.emit(":loaded",n)}),n.attach(),n},renew:function(){Fast.forEach(u.list,function(e){e.mute(e.isMuted()),e.volume(e.getVolume())})},getIdx:function(t){return Fast.findIndex(u.list,function(e){return e.id===t})},get:function(t){var e=Fast.find(u.list,function(e){return e.id===t});if(!e)throw new ReferenceError('There is no track with the id "'+t+'". Please check your spelling and capitalization.',"track.js -> Track.get()",155);return e},removeFromDOM:function(e){"string"==typeof e&&(e=u.get(e)),e&&u.is(e)?e.unattach():t.remove()},_runOnMultiple:function(e,t,o){e instanceof Array&&u.prototype.hasOwnProperty(t)&&Fast.forEach(u.list,function(e){u.is(e)||(e=u.get(e)||null),e&&e[t].apply(e,o&&o instanceof Array?o:[])})}}),Object.assign(u.prototype,{constructor:u,emit:function(e){this.$el.trigger({type:e,track:this})},clone:function(){return new u(this.id,this.sources)},isAttached:function(){return $.contains(t[0],this.unwrap)},attach:function(){return this.isAttached()||this.$el.appendTo(t),this},unattach:function(){return this.isAttached()&&this.$el.remove(),this},isPlaying:function(){return!this.unwrap.paused},play:function(){var e=this;return this.unwrap.play(),u.emit(":play",this),this.$el.on("ended",function(){e.unwrap.loop||(e.unwrap.currentTime=0,u.emit(":stop",e))}),this},playWhenPossible:function(){var t=this;return this.unwrap.play().then(function(){u.emit(":play",t),t.$el.on("ended",function(){t.unwrap.loop||(t.unwrap.currentTime=0,u.emit(":stop",t))})},function(e){$(document).one("click mousedown keydown touchstart",function(){t.play()})}).catch(function(e){console.error(e)}),this},forcePlay:function(){var e=this,t=$(document.createElement("a")).css("display","none").appendTo(document.body).on("click",function(){e.play()});setTimeout(function(){t.trigger("click")},safeAudioStart)},pause:function(){return this.unwrap.pause(),u.emit(":pause",this),this},stop:function(){return this.unwrap.pause(),this.unwrap.currentTime=0,u.emit(":stop",this),this},mute:function(e){return e=!!e,this.$el.attr("data-mute",e),r.master.mute?this.unwrap.muted=!0:this.unwrap.muted=e,u.emit(":mute",this),this},isMuted:function(){var e=this.$el.attr("data-mute");return"boolean"==typeof e?e:"false"!==e},toggleMute:function(){return this.mute(!this.isMuted()),this},volume:function(e){return e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),this.$el.attr("data-volume",e),this.unwrap.volume=e*r.master.volume),u.emit(":volume",this),this},getVolume:function(){return Number(this.$el.attr("data-volume"))},addToGroup:function(e,t){var o=this,n=t?r.groups.custom[e]:r.groups[e];return Fast.some(n,function(e){return o.id===e.id})||n.push(this),this},removeFromGroup:function(e,t){var o=this,n=t?r.groups.custom[e]:r.groups[e],a=Fast.findIndex(n,function(e){return e.id&&e.id===o.id});return n.splice(a,1),this},loop:function(e){return this.unwrap.loop=!!e,this.unwrap.loop?this.addToGroup("looping"):this.removeFromGroup("looping"),this},isLooping:function(){return!!this.unwrap.loop},toggleLoop:function(){return this.loop(!this.isLooping()),this},seek:function(e){return e<0?e=this.unwrap.duration-e:e>this.unwrap.duration&&(e=this.unwrap.duration),this.unwrap.currentTime=e,this},fadeIn:function(e){var t=this;e=e||1;var o=this.getVolume();return this.volume(0),this.play(),this.$el.animate({volume:o*r.master.volume},1e3*e,function(){t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeOut:function(e){e=e||1;var t=this,o=this.getVolume();return this.$el.animate({volume:0},1e3*e,function(){t.stop(),t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeTo:function(e,t){var o=this;if(e=e||1,t=Number(t),!Number.isNaN(t))return 1<t?t=1:t<0&&(t=0),this.$el.animate({volume:t*r.master.volume},1e3*e,function(){o.volume(t),u.emit(":volume",o),u.emit(":fade",o)}),this;alert("ivalid volume level")},delay:function(e,t){var o=this;"function"==typeof t&&(e=Number(e),(Number.isNaN(e)||e<0)&&(e=0),setTimeout(function(){t.call(o,o,e)},e))},on:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.on() -> invalid callback"),this;(e=o(e))&&this.$el.on(e,t)},one:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.one() -> invalid callback"),this;(e=o(e))&&this.$el.one(e,t)},off:function(e){(e=o(e))&&this.$el.off(e)}}),r.classes.Track=u,r.newTrack=function(){try{return u.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.newTrack() -> see the console for more information.")}},r.track=function(e){try{return u.get(e)}catch(e){console.error(e.message),alert("Error in A.track() -> see the console for more information.")}},$(document).on(":master-mute",u.renew),$(document).on(":master-volume",u.renew)}(),function(){"use strict";var i=Chapel.Audio,s=i.classes.Track,o=(i.data._extend,/(play)?list:(.+)/i);i.createGroup=function(e,t,o){var n,a,r=o?[].slice.call(arguments).slice(1):t;n=e,(a=r)&&Array.isArray(a)||(a=[]),i.groups.custom[n]=Fast.map(a,function(e){return s.get(e)})},i.group=function(e){if(!(this instanceof i.group))return new i.group(e);if(Object.keys(i.groups.custom).includes(e))this.members=i.groups.custom[e];else{if(!(i.groups[e]&&i.groups[e]instanceof Array))throw new ReferenceError('There is no group with the id "'+id+'". Please check your spelling and capitalization.',"group.js -> A.group()",29);this.members=i.groups[e]}var t;!o.test(e)||(t=e.match(o)[2])&&t.trim()&&(this.members=i.playlist(t).tracks),Array.isArray(this.members)||(this.members=[],console.error('Could not find members for track group "'+e+'"!'))},Object.assign(i.group,{is:function(e){return this instanceof i.group},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);var a=[e.members,t,o];s._runOnMultiple.apply(null,a)}}),Object.assign(i.group.prototype,{constructor:i.group,_run:function(){i.group._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},play:function(){return this._run("play"),this},pause:function(){return this._run("pause"),this},stop:function(){return this._run("stop"),this},mute:function(e){return this._run("mute",e),this},volume:function(e){return this._run("volume",e),this},loop:function(e){return this._run("loop",e),this}})}(),function(){"use strict";var e=Chapel.Audio,r=e.classes.Track;e.data._extend;function n(e,t){if(!(this instanceof n))return new n(e,t);this.id=e,this.tracks=t.map(function(e){return r.get(e)}),this.looping=!1,this.current="",this.playing=!1}Object.assign(n,{list:{},is:function(e){return e instanceof n},add:function(e,t,o){return o&&(t=[].slice.call(arguments).slice(1)),n.list[e]=new n(e,t),n.list[e]},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);var a=[e.tracks,t,o];r._runOnMultiple.apply(null,a)}}),Object.assign(n.prototype,{constructor:n,clone:function(){return new n(this.id,this.tracks.map(function(e){return e.id}))},_run:function(){n._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},volume:function(e){return this._run("volume",e),this},mute:function(e){return this._run("mute",e),this},shuffle:function(){for(var e,t,o=this.tracks,n=o.length-1;0<n;n--)e=Math.floor(Math.random()*(n+1)),t=o[n],o[n]=o[e],o[e]=t;return this.tracks=o,this},random:function(){return this.tracks[Math.floor(Math.random()*this.tracks.length)]},isPlaying:function(){return this.playing},nowPlaying:function(){return r.get(this.current)},play:function(e){var t=this;if((e=e||(t.current?Fast.findIndex(t.tracks,function(e){return e.id===t.current}):0))>=t.tracks.length&&t.looping)e=0;else if(e>=t.tracks.length)return t.current="",void(t.playing=!1);var o=t.tracks[e],n=o.isLooping();return o.loop(!1),o.play(),t.playing=!0,setTimeout(function(){o.isPlaying()||(t.playing=!1)},20),t.current=o.id,o.$el.one("ended.playlist",function(){e++,o.loop(n),t.play(e)}),t},loop:function(e){return this.looping=!!e,this},isLooping:function(){return this.looping},stop:function(){var e;return this.current&&this.isPlaying()?(e=this.nowPlaying())&&(e.stop(),e.$el.off(".playlist")):this._run("stop"),this.current="",this.playing=!1,this},pause:function(){var e;return this.current&&this.isPlaying()&&((e=this.nowPlaying())&&e.pause()),this.playing=!1,this}}),e.classes.Playlist=n,e.createPlaylist=function(){try{n.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}},e.playlist=function(e){try{var t=n.list[e]||null;if(!t)throw new ReferenceError('There is no playlist with the id "'+e+'". Please check your spelling and capitalization.',"list.js -> A.playlist()",171);return t}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}}}(),function(){"use strict";var t=Chapel.Audio,o=t.classes.Track,n=t.classes.Playlist;function a(t,o){if("object"!=typeof o)throw new TypeError("Invalid extension.","extensions.js -> _extend()",8);Fast.forEach(Object.keys(o),function(e){if(void 0!==t[e])throw new Error('Invalid extension: cannot clobber existing property "'+e+'".',"extensions.js -> _extend()",8);t[e]=o[e]})}t.extend=function(e){a(Audio,e)},o.extend=function(e){a(o,e)},o.extendPrototype=function(e){a(o.prototype,e)},t.extendTrack=o.extend,t.extendTrackProto=o.extendPrototype,t.group.extend=function(e){a(t.group,e)},t.group.extendPrototype=function(e){a(t.group.prototype,e)},t.extendGroup=t.group.extend,t.extendGroupProto=t.group.extendPrototype,n.extend=function(e){a(n,e)},n.extendPrototype=function(e){a(n.prototype,e)},t.extendPlaylist=n.extend,t.extendPlaylistProto=n.extendPrototype}(),function(){"use strict";var e,t,o,n,a,r,i,s,u=Chapel.options;u.showControls&&(e=$(document.createElement("div")).attr("id","story-menu").css("display","none"),t=$(document.createElement("span")).attr("id","vol-title").append("Volume"),u.volumeDisplay||t.css("display","none"),o=$(document.createElement("input")).attr({id:"audio-volume",type:"range",min:1,max:99,step:1,title:"Volume"}).addClass("hal"),(n=Math.trunc(100*window.Chapel.Audio.master.volume))<0?n=0:100<n&&(n=100),o.attr("value",n),a=function(e){void 0===e&&(e=o.val()),t.empty().append("Volume "+e)},o.on("input",function(){window.Chapel.Audio.volume($(this).val()/100),a($(this).val())}),r=$(document.createElement("tw-link")).attr({id:"audio-mute",title:"Mute"}).append("Mute <span></span>").on("click",function(e){e.preventDefault(),$(this).toggleClass("muted"),Chapel.Audio.mute(!Chapel.Audio.isMuted())}),Chapel.Audio.isMuted()&&r.addClass("muted"),i=$(document.createElement("tw-link")).attr("id","audio-panel-toggle").on("click",function(e){e.preventDefault(),s.toggleClass("closed")}),s=$(document.createElement("div")).attr("id","audio-controls").append(e,t,o,r,i).appendTo(document.body),u.sidebarStartClosed&&s.addClass("closed"),window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.controls={$panel:s,$volume:o,$mute:r,$user:e,close:function(){s.addClass("closed")},open:function(){s.removeClass("closed")},toggle:function(){s.toggleClass("closed")},hide:function(){s.css("display","none")},show:function(){s.css("display","block")},updateVolume:a})}(),function(){"use strict";var s=Chapel.options,t=State,e=$(document.createElement("div")).attr("id","audio-overlay").css("display","none").appendTo(document.body);function o(){e.css("display","block").append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>')}function u(){e.fadeOut(function(){e.empty()})}window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.loadScreen={show:o,dismiss:u,kill:function(){$("#audio-overlay").remove()}},window.Chapel.Audio.$overlay=e,window.Chapel.Audio.preload=function(){var a,e,r,i;Chapel.debug("This is a mobile browser -> ",$.browser.mobile),t.pastLength||t.futureLength||$.browser.mobile||($(document).ready(function(){o()}),a=100+s.loadDelay,e=Chapel.Audio.classes.Track.list,r=Chapel.Audio.loaded,e.length?(i=Fast.map(e,function(e){return e.id}),0<s.totalLoadLimit&&setTimeout(function(){u()},s.totalLoadLimit),function e(){var t,o,n;i.length?(t=i.shift(),r.includes(t)?e():(o=Chapel.Audio.classes.Track.get(t)).unwrap.readyState<2?(n=!1,o.$el.one("canplaythrough.hal",function(){e(),n=!0}),setTimeout(function(){n||(o.$el.off("canplaythrough.hal"),e())},s.trackLoadLimit)):(r.includes(t)||r.push(t),e())):setTimeout(u,a)}()):setTimeout(u,a))}}(),function(){"use strict";var o=Chapel.options.storagekey+"_hal_restart_";Chapel.debug("HAL Session Key -> ",o);var e,t,n=(window.sessionStorage?(Chapel.debug("Session Storage Available"),e=function(e,t){window.sessionStorage.setItem(o+e,t)},t=function(e){return window.sessionStorage.getItem(o+e)}):(Chapel.debug("Session Storage Unavailable"),e=function(){},t=function(){},console.warn("Session storage is unavailable...")),{save:e,load:t});window.Chapel.Audio.state={_store:n,saveTracks:function(){var e;try{e=Fast.map(Chapel.Audio.classes.Track.list,function(e){return{id:e.id,sources:e.sources}}),Chapel.debug("Session Saved (Tracks) -> ",e),e=JSON.stringify(e),n.save("tracks",e)}catch(e){console.error(e.message)}},loadTracks:function(){var e;try{e=(e=n.load("tracks"))&&JSON.parse(e),Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Tracks) -> ",e),Fast.forEach(e,function(e){e.id&&e.sources&&!Chapel.Audio.classes.Track.has(e.id)?Chapel.Audio.newTrack.apply(null,[e.id].concat(e.sources)):Chapel.debug("Track reloading skipped.")}))}catch(e){console.error(e.message)}},savePlaylists:function(){try{var o=Chapel.Audio.classes.Playlist.list,e=Fast.map(Object.keys(o),function(e){var t={};return t.tracks=Fast.map(o[e].tracks,function(e){return e.id}),t.id=o[e].id,t});Chapel.debug("Session Saved (Playlists) -> ",e),e=JSON.stringify(e),n.save("playlists",e)}catch(e){console.error(e.message)}},loadPlaylists:function(){var e;try{(e=(e=n.load("playlists"))&&JSON.parse(e))&&Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Playlists) -> ",e),Fast.forEach(e,function(e){e.id&&e.tracks&&Chapel.Audio.createPlaylist(e.id,e.tracks)}))}catch(e){console.error(e.message)}},saveGroups:function(){var t;try{t={},Fast.forEach(Object.keys(Chapel.Audio.groups.custom),function(e){t[e]=Fast.map(Chapel.Audio.groups.custom[e],function(e){return"string"==typeof e?e:e.id})}),Chapel.debug("Session Saved (Groups) -> ",t),t=JSON.stringify(t),n.save("groups",t)}catch(e){console.error(e.message)}},loadGroups:function(){var t;try{(t=(t=n.load("groups"))&&JSON.parse(t))&&"object"==typeof t&&(Chapel.debug("Session Loaded (Groups) -> ",t),Fast.forEach(Object.keys(t),function(e){Fast.map(t[e],function(e){return Chapel.Audio.classes.Track.get(e)})}),Chapel.Audio.groups.custom=t)}catch(e){console.error(e.message)}}}}(),function(){"use strict";var e=Chapel.options;e.globalA&&void 0===window.A&&(Chapel.debug("Created global A interface."),window.A=window.Chapel.Audio),Chapel.Get.fromPassage&&(Chapel.debug("Loading tracks from track def special passage -> ",Chapel.Get.fromPassage),Chapel.Get.fromPassage.forEach(function(e,t){Chapel.Audio.newTrack.apply(null,[t].concat(e))})),$(document).on("unload",function(){Chapel.debug("User Prefs Saved"),window.Chapel.Audio.savePrefs()}),Chapel.Audio.classes.Track.renew(),Chapel.Audio.controls&&Chapel.Audio.controls.updateVolume(),Chapel.Get.isHarlowe3OrLater&&($(window).on("unload",function(){Chapel.debug("HAL State Saved"),Chapel.Audio.state.saveTracks(),Chapel.Audio.state.savePlaylists(),Chapel.Audio.state.saveGroups()}),Chapel.debug("HAL State Loaded"),Chapel.Audio.state.loadTracks(),Chapel.Audio.state.loadPlaylists(),Chapel.Audio.state.loadGroups()),e.persistPrefs&&(Chapel.debug("User Prefs Loaded"),Chapel.Audio.loadPrefs())}(),function(){"use strict";var s,u,e,l,t;Chapel.options.showControls&&(s=Engine,u=Chapel.Audio.controls.$user,e=function(){return"none"!==u.css("display")},l=function(){return e()||u.css("display","block"),u},t=function(){return e()&&u.css("display","none"),u},Chapel.Audio.menu={hide:t,show:l,isShown:e,links:{add:function(e,t,o){var n,a;if(!e||"string"!=typeof e){var r="undefined";return alert(r),void console.error(r)}o||"function"!=typeof t?(t&&"string"==typeof t&&(n=t),o&&"function"==typeof o&&(a=o)):(a=t,n=null);var i=$(document.createElement("tw-link")).append(e).attr({tabindex:"0",name:e.toLowerCase().trim()}).on("click",function(){n&&s.goToPassage(n),a&&a()}).addClass("story-menu").appendTo(u);return l(),i},clear:function(){return u.empty(),t()},hide:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').addClass("hide")},show:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').removeClass("hide")},toggle:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').toggleClass("hide")},remove:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').remove()}}})}(),function(){"use strict";var n=Chapel.Audio;function o(e){return e&&"function"==typeof e}function a(e,t){if(!e||"string"!=typeof e)return null;switch(e=e.toLowerCase().trim()){case"isplaying":e="isPlaying";break;case"playwhenpossible":e="playWhenPossible";break;case"ismuted":e="isAMuted";break;case"togglemute":e="toggleMute";break;case"getvolume":e="getVolume";break;case"islooping":e="isLooping";break;case"toggleloop":e="toggleLoop";break;case"fadein":e="fadeIn";break;case"fadeout":e="fadeOut";break;case"fadeto":e="fadeTo";break;case"stopall":e="stopAll"}if("isPlaying"===e&&"master"===t&&(e="audioPlaying"),"group"===t){if(o(n.group.prototype[e]))return e}else if("master"===t){if(o(n[e]))return e}else if(o(n.classes[t].prototype[e]))return e;throw new ReferenceError('Cannot run the command: "'+e+'" on the API "'+t+'". The command may be invalid, or this may be a bug in HAL.',"macros.js -> getCommand()",10)}var e={newtrack:function(){var e=[].slice.call(arguments);try{return n.newTrack.apply(null,e)}catch(e){alert("Error in the (newtrack:) macro: "+e.message)}},newplaylist:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createPlaylist(e,t)}catch(e){alert("Error in the (newplaylist:) macro: "+e.message)}},newgroup:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createGroup(e,t)}catch(e){alert("Error in the (newgroup:) macro: "+e.message)}},masteraudio:function(e){try{return e=a(e,"master"),n[e].apply(null,[].slice.call(arguments).slice(1))}catch(e){alert("Error in the (masteraudio:) macro: "+e.message)}},track:function(e,t){try{var o=n.track(e);return o[t=a(t,"Track")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (track:) macro: "+e.message)}},playlist:function(e,t){try{var o=n.playlist(e);return o[t=a(t,"Playlist")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (playlist:) macro: "+e.message)}},group:function(e,t){try{var o=n.group(e);return o[t=a(t,"group")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (group:) macro: "+e.message)}}};window.Chapel.Macros.add(e)}();
-/** End of HAL code */</script><tw-passagedata pid="1" name="Einführung: 1 Title Screen" tags="Gruppe" position="817,14" size="200,200">&lt;style&gt; img{ 
+/** End of HAL code */</script><tw-passagedata pid="1" name="Einführung: 1 Title Screen" tags="Gruppe" position="818,15" size="200,200">&lt;style&gt; img{ 
 	max-width:100%;
 	max-height:100%;
 }
@@ -48,9 +31,9 @@ img {
 [[Weiter-&gt;S0]]
 (set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
-</tw-passagedata><tw-passagedata pid="2" name="S0" tags="Pausenhof Gruppe" position="873,236" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Montag 11:20 Uhr , endlich klingelt es zur Pause. Der Matheunterricht ist geschafft. [[Matheo-&gt;Matheo Steckbrief]], [[Kim-&gt;Kim Steckbrief]] und [[Laila-&gt;Laila Steckbrief]] stürmen aus dem Klassenzimmer, um als erste auf dem Pausenhof zu sein. Sie wollen sich ihren Stammplatz an der Tischtennisplatte sichern. Dort angekommen, tauschen sie sich über ihre Erlebnisse am Wochenende aus.]
+</tw-passagedata><tw-passagedata pid="2" name="S0" tags="Pausenhof Gruppe" position="867,250" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Montag 11:20 Uhr , endlich klingelt es zur Pause. Der Matheunterricht ist geschafft. [[Matheo-&gt;Matheo Steckbrief]], [[Kim-&gt;Kim Steckbrief]] und [[Laila-&gt;Laila Steckbrief]] stürmen aus dem Klassenzimmer, um als erste auf dem Pausenhof zu sein. Sie wollen sich ihren Stammplatz an der Tischtennisplatte sichern. Dort angekommen, tauschen sie sich über ihre Erlebnisse am Wochenende aus.]
 [[Weiter-&gt;S1]] 
-{(track: &#39;bell&#39;, &#39;playwhenpossible&#39;)}
+{(track: &#39;S0&#39;, &#39;play&#39;)}
 (set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 &lt;style&gt; img{ 
@@ -91,7 +74,8 @@ img {
 }
 &lt;/style&gt;
 &lt;img src=&quot;https://github.com/interaktiveGeschichte/Geschichte/blob/main/Steckbrief%20K.jpg?raw=true&quot;\&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="S1" tags="Pausenhof" position="876,354" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Kim erzählt mit voller Freude:  „Hey ihr beiden, ich habe endlich ein Handy bekommen.“ 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="S1" tags="Pausenhof" position="872,359" size="100,100">
+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Kim erzählt mit voller Freude:  „Hey ihr beiden, ich habe endlich ein Handy bekommen.“ 
 Laila: „Wie coooool! Zeig mal her.&quot;
 Matheo: „Das wurde aber auch Zeit, ich habe schon seit der 3. Klasse ein Handy.  Jetzt kannst du auch richtig coole Apps herunterladen.&quot;
 Kim: „Oh ja, das muss ich direkt machen! Könntest du mir dabei helfen?&quot;
@@ -100,33 +84,74 @@ Laila: „WhatsApp ist schonmal ein guter Anfang, das finde ich am wichtigsten.&
  Matheo: „Ja du hast recht, dann können wir eine Gruppe auf WhatsApp machen. Gibst du mir noch deine Nummer? So können wir zusammen schreiben und ausmachen wann wir uns nach der Schule treffen.“]
 (set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
-[[Weiter-&gt;S2]]</tw-passagedata><tw-passagedata pid="7" name="hal.tracks" tags="hal.tracks" position="0,140" size="200,200">bell: https://github.com/interaktiveGeschichte/Geschichte/raw/gh-pages/173415__thecityrings__schoolbell-klaverblad.mp3
-</tw-passagedata><tw-passagedata pid="8" name="Example Image" tags="Image Gruppe" position="253,137" size="200,200"></tw-passagedata><tw-passagedata pid="9" name="S2" tags="" position="877,475" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Kim : „Kannst du mal dein Handy herausholen? Dann kann ich meine Nummer bei dir einspeichern.&quot; 
+[[Weiter-&gt;S2]]
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S1&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="7" name="hal.tracks" tags="hal.tracks" position="1,151" size="200,200">bell: https://github.com/interaktiveGeschichte/Geschichte/raw/gh-pages/173415__thecityrings__schoolbell-klaverblad.mp3
+A1: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/A1%2B2.mp3?raw=true
+A3: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/A3.mp3?raw=true
+A4:   https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/A4.mp3?raw=true
+A5: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/A5.mp3?raw=true
+S0: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S0.mp3?raw=true
+S1: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S1.mp3?raw=true
+S2: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S2.mp3?raw=true
+S3: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S3.mp3?raw=true
+S4: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S4.mp3?raw=true
+S5: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S5.mp3?raw=true
+S6: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S6.mp3?raw=true
+S7: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S7.mp3?raw=true
+S8: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S8.mp3?raw=true
+S9: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S9.mp3?raw=true
+S10: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S10.mp3?raw=true
+S11: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S11.mp3?raw=true
+S12: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S12.mp3?raw=true
+S13: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S13.mp3?raw=true
+S14: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S14.mp3?raw=true
+S15: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S15.mp3?raw=true
+S16: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S16.mp3?raw=true
+S17: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S17.mp3?raw=true
+S18: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S18.mp3?raw=true
+S19: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S19.mp3?raw=true
+S20: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S20.mp3?raw=true
+S21: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S21.mp3?raw=true
+S22: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S22.mp3?raw=true
+S23: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/S23.mp3?raw=true
+Q1: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/Q1+2+3.mp3?raw=true
+Q7: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/Q7+8+9.mp3?raw=true
+SC1: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/SC1.mp3?raw=true
+SC2: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/SC2.mp3?raw=true
+SC3: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/SC3.mp3?raw=true
+SC4: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/SC4.mp3?raw=true
+SC5: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/SC5.mp3?raw=true
+ISC1: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/ISC1.mp3?raw=true
+ISC2: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/ISC2.mp3?raw=true
+ISC3: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/ISC3.mp3?raw=true
+ISC4: https://github.com/interaktiveGeschichte/Geschichte/blob/gh-pages/ISC4.mp3?raw=true</tw-passagedata><tw-passagedata pid="8" name="Example Image" tags="Image Gruppe" position="253,137" size="200,200"></tw-passagedata><tw-passagedata pid="9" name="S2" tags="" position="871,477" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Kim : „Kannst du mal dein Handy herausholen? Dann kann ich meine Nummer bei dir einspeichern.&quot; 
 Matheo holt sein Handy aus seiner Hosentasche raus und gibt es Kim in die Hand. Während Kim ihre Nummer in das Handy eintippt, erwähnt Laila hinweisend:  „Aber Kim, du musst ein bisschen vorsichtig sein, wem du deine Nummer gibst.&quot;]
 (set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
-[[Weiter-&gt;S3]] </tw-passagedata><tw-passagedata pid="10" name="S4" tags="" position="879,703" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Jetzt bist du gefragt:
+[[Weiter-&gt;S3]] 
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S2&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="10" name="S4" tags="" position="879,702" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Jetzt bist du gefragt:
 &#39;&#39;Wem gebe ich meine Nummer?&#39;&#39;
 [[- Ich veröffentliche sie auf Instagram/Tiktok, damit mich jeder erreichen kann-&gt;A1]]
 [[- Einer Gewinnspiel-Webseite-&gt;A2]]
 [[- Menschen, die ich persönlich kenne und auch mag-&gt;A3]]]
 (set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
-(enchant: ?Page, $storyStyle)</tw-passagedata><tw-passagedata pid="11" name="A1" tags="" position="706,961" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+(enchant: ?Page, $storyStyle)
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S4&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="11" name="A1" tags="" position="706,961" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Du kannst nochmal zurück oder zur richtigen Antwort.
 [[Zurück-&gt;S4]] 
-[[Antwort-&gt;A3]]]</tw-passagedata><tw-passagedata pid="12" name="A2" tags="" position="874,965" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+[[Antwort-&gt;A3]]]
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;A1&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="12" name="A2" tags="" position="873,965" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Du kannst nochmal zurück oder zur richtigen Antwort.
 [[Zurück-&gt;S4]] 
-[[Antwort-&gt;A3]]]</tw-passagedata><tw-passagedata pid="13" name="A3" tags="" position="1056,963" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+[[Antwort-&gt;A3]]]
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;A1&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="13" name="A3" tags="" position="1056,963" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Details wie deine Handynummer, dein Alter, wo du wohnst und wo du zur Schule gehst, sind persönlich und gehen andere nichts an. Speichere auch du nur Nummern von Menschen, die du kennst.
 [[Weiter-&gt;S5]]]
-</tw-passagedata><tw-passagedata pid="14" name="Impulsfrage" tags="" position="1073,487" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
-(enchant: ?Page, $storyStyle)
-(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Was für Vorteile hat man mit [[Whatsapp-&gt;Merkkasten]]?]</tw-passagedata><tw-passagedata pid="15" name="Merkkasten" tags="" position="1217,678" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;A3&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="14" name="Merkkasten" tags="" position="1215,678" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 
 Vorteile 👍
@@ -152,15 +177,15 @@ Nachteile👎:
 
 
 [[Zurück zur Geschichte-&gt;S3]]
-</tw-passagedata><tw-passagedata pid="16" name="S3" tags="" position="879,590" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+</tw-passagedata><tw-passagedata pid="15" name="S3" tags="" position="877,589" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Was für Vorteile hat man mit WhatsApp?]
-[[Impulsfrage]] 
-[[Weiter zum Quiz-&gt;S4]]</tw-passagedata><tw-passagedata pid="17" name="S5" tags="" position="875,1099" size="100,100"> (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Laila: „Du kannst auch einstellen wer dich in eine Gruppe hinzufügen darf. Ich zeig dir mal wie das geht, schau mal.&quot;
+[[Weiter zum Quiz-&gt;S4]]
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S3&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="16" name="S5" tags="" position="874,1099" size="100,100"> (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Laila: „Du kannst auch einstellen wer dich in eine Gruppe hinzufügen darf. Ich zeig dir mal wie das geht, schau mal.&quot;
 (set: $storyStyle to (background: white) + (color:black) )
 (enchant: ?Page, $storyStyle)
 [[Weiter-&gt;SC1]]]
-</tw-passagedata><tw-passagedata pid="18" name="SC4" tags="" position="1411,1671" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S5&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="17" name="SC4" tags="" position="1419,1678" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Gehe zu Gruppen.]
 &lt;style&gt; img{ 
@@ -173,8 +198,8 @@ Nachteile👎:
 
 [[Weiter-&gt;SC5]]
 
-
-</tw-passagedata><tw-passagedata pid="19" name="SC5" tags="" position="1187,1817" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;SC4&#39;,&#39;play&#39;)}
+</tw-passagedata><tw-passagedata pid="18" name="SC5" tags="" position="1187,1817" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Jetzt kannst du „meine Kontakte“ oder „meine Kontakte außer…“ wählen, wen du Gruppeneinladungen von bestimmten Personen vermeiden möchtest.]
 &lt;style&gt; img{ 
@@ -187,20 +212,21 @@ Nachteile👎:
 &lt;img src=&quot;&quot;\&gt;
 
 [[Weiter-&gt;S6]]
-</tw-passagedata><tw-passagedata pid="20" name="S6" tags="" position="868,1550" size="100,100">(set: $storyStyle to (background: white) + (color:black) )
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;SC5&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="19" name="S6" tags="" position="868,1550" size="100,100">(set: $storyStyle to (background: white) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Quiz: In welcher Gruppe möchte ich sein?
 [[- eine Gruppe, die sich über eine bestimmte Person lustig machen will-&gt;A4]]
 [[- Freundschaftsgruppen-&gt;A5]]
 [[- Klassengruppen-&gt;A5]]]
-</tw-passagedata><tw-passagedata pid="21" name="A4" tags="" position="722,1695" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S6&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="20" name="A4" tags="" position="722,1696" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Gruppen, in denen sich andere über eine bestimmte Person lustig machen, sind nicht in Ordnung. Tu was dagegen, rede z.B. mit Erwachsenen, denen du vertraust.
-[[Zurück-&gt;S6]]]</tw-passagedata><tw-passagedata pid="22" name="A5" tags="" position="886,1701" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+[[Zurück-&gt;S6]]]
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;A4&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="21" name="A5" tags="" position="885,1701" size="100,100">(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
  (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Richtig! Allgemein zählt sei nur in Gruppen mit Personen die du auch kennst. Bist du dir unsicher frag am besten einen Erwachsenen, dem du vertraust.
  [[Weiter-&gt;S8]]]
- </tw-passagedata><tw-passagedata pid="23" name="SC1" tags="" position="1127,1128" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+ {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;A5&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="22" name="SC1" tags="" position="1125,1133" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Klicke rechts unten auf Einstellungen.]
 &lt;style&gt; img{ 
@@ -211,7 +237,8 @@ Nachteile👎:
 &lt;img src=&quot;https://github.com/interaktiveGeschichte/Geschichte/blob/main/E1.jpg?raw=true&quot;\&gt;
 &lt;/div&gt;
 
-[[Weiter-&gt;SC2]]</tw-passagedata><tw-passagedata pid="24" name="SC2" tags="" position="1241,1250" size="100,100">
+[[Weiter-&gt;SC2]]
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;SC1&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="23" name="SC2" tags="" position="1241,1250" size="100,100">
 (set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Tippe nun auf Account.]
@@ -223,7 +250,7 @@ Nachteile👎:
 &lt;img src=&quot;https://github.com/interaktiveGeschichte/Geschichte/blob/main/E2.jpg?raw=true&quot;\&gt;
 &lt;/div&gt;
 [[Weiter-&gt;SC3]]
-</tw-passagedata><tw-passagedata pid="25" name="SC3" tags="" position="1171,1369" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;SC2&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="24" name="SC3" tags="" position="1170,1369" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Wähle jetzt Datenschutz aus.]
 &lt;style&gt; img{ 
@@ -234,7 +261,7 @@ Nachteile👎:
 &lt;img src=&quot;https://github.com/interaktiveGeschichte/Geschichte/blob/main/E3.jpg?raw=true&quot;\&gt;
 &lt;/div&gt;
 [[Weiter-&gt;SC4]]
-</tw-passagedata><tw-passagedata pid="26" name="S8" tags="" position="891,2006" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;SC3&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="25" name="S8" tags="" position="890,2006" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Nach der Schule erstellt Matheo eine WhatsApp Gruppe und schreibt direkt seinen beiden Freundinnen.
 &lt;style&gt; img{ 
@@ -246,7 +273,7 @@ Nachteile👎:
 &lt;/div&gt;
 
 [[Weiter-&gt;S9]]]
-</tw-passagedata><tw-passagedata pid="27" name="S9" tags="" position="897,2155" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S8&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="26" name="S9" tags="" position="897,2155" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Die drei besten Freunde, Laila, Kim und Matheo haben sich für Dienstag im Frühlingspark, nahe der Schule verabredet. Treffpunkt ist ihr Lieblingsplatz, die kleine Bank unter der alten Eiche. 
@@ -259,16 +286,21 @@ Heute ist das Top-Thema der drei Freunde das neue  Handy von Kim und die Profile
 &lt;/style&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/GS2.JPG&quot;\&gt;
 &lt;/div&gt;
-[[Weiter-&gt;S10]]]</tw-passagedata><tw-passagedata pid="28" name="S10" tags="" position="887,2311" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
+[[Weiter-&gt;S10]]]
+{(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S9&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="27" name="S10" tags="" position="890,2312" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
  Kim: „Leute ich hab mir gestern Instagram heruntergeladen und ein Profil erstellt.&quot;
 Matheo jubelt und freut sich, dass er endlich seine Freundin auf Instagram adden kann. 
 Kim ist allerdings noch skeptisch, wie sie ihr Profil gestalten soll und fragt ihre Freunde nach Rat: „Welches Bild soll ich als Proflbild nehmen und was soll ich in die Bio schreiben?&quot;
- [[Weiter-&gt;S11]]]</tw-passagedata><tw-passagedata pid="29" name="S11" tags="" position="892,2454" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
+ [[Weiter-&gt;S11]]]
+ {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S10&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="28" name="S11" tags="" position="900,2456" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
-Hier kommt euer Input! Was würde Mattheo antworten und was würde Laila empfehlen.
+Hier kommt euer Input! Was schreibt ihr in eure Bio?
+Was würde Mattheo antworten und was würde Laila empfehlen.
 [[Weiter-&gt;S12]]]
-</tw-passagedata><tw-passagedata pid="30" name="S12" tags="" position="891,2603" size="100,100">Was soll Matheo in seiner Bio haben?
+
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S11&#39;,&#39;play&#39;)}
+</tw-passagedata><tw-passagedata pid="29" name="S12" tags="" position="891,2612" size="100,100">Was soll Matheo in seiner Bio haben?
 o	Ein Bild von ihm mit Skateboard/ein Bild mit Snapchatfilter
 o	Viele Infos von sich(Geburtstag, Schule,Adresse..)
 o	Handynummer
@@ -293,29 +325,37 @@ o	Selbstgemachtes Bild mit Lego als Profilbild
 o	Es gibt in den Apps Einstellungen für die Privatsphäre
 
 
-(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[[[Weiter-&gt;S13]]
+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[[[Weiter-&gt;S14]]
 (set: $storyStyle to (background: white ) + (color:black) )
-(enchant: ?Page, $storyStyle)]</tw-passagedata><tw-passagedata pid="31" name="S13" tags="" position="888,2775" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
+(enchant: ?Page, $storyStyle)]
+
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S12&#39;,&#39;play&#39;)}
+</tw-passagedata><tw-passagedata pid="30" name="S13" tags="" position="674,2723" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
-[[Weiter-&gt;S14]]]</tw-passagedata><tw-passagedata pid="32" name="S14" tags="" position="899,2932" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+[[Weiter-&gt;S14]]]</tw-passagedata><tw-passagedata pid="31" name="S14" tags="" position="899,2932" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 Was kann ich in meine Bio schreiben?
 [[- Meine Telefonnummer und meine Adresse-&gt;Q1]]
 [[- Meinen vollen Namen und mein Geburtsdatum-&gt;Q2]]
 [[- Meinen Spitznamen und meine Hobbies-&gt;Q3]]]
-</tw-passagedata><tw-passagedata pid="33" name="Q1" tags="" position="751,3075" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Manche geben alles in ihrer Bio an: Name, Alter, Schule, Vereine, Snapchat-Name und den Wohnort.
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S14&#39;,&#39;play&#39;)}
+</tw-passagedata><tw-passagedata pid="32" name="Q1" tags="" position="751,3075" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Manche geben alles in ihrer Bio an: Name, Alter, Schule, Vereine, Snapchat-Name und den Wohnort.
 Sei besser vorsichtig, denn deine Bio ist für jeden öffentlich, egal ob dein Profil privat ist oder nicht!
 [[Weiter-&gt;S15]]
 (set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
-(enchant: ?Page, $storyStyle)]</tw-passagedata><tw-passagedata pid="34" name="Q2" tags="" position="901,3076" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Manche geben alles in ihrer Bio an: Name, Alter, Schule, Vereine, Snapchat-Name und den Wohnort.
+(enchant: ?Page, $storyStyle)]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;Q1&#39;,&#39;play&#39;)}
+</tw-passagedata><tw-passagedata pid="33" name="Q2" tags="" position="898,3081" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Manche geben alles in ihrer Bio an: Name, Alter, Schule, Vereine, Snapchat-Name und den Wohnort.
 Sei besser vorsichtig, denn deine Bio ist für jeden öffentlich, egal ob dein Profil privat ist oder nicht!
 [[Weiter-&gt;S15]]
 (set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
-(enchant: ?Page, $storyStyle)]</tw-passagedata><tw-passagedata pid="35" name="Q3" tags="" position="1051,3076" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Manche geben alles in ihrer Bio an: Name, Alter, Schule, Vereine, Snapchat-Name und den Wohnort.
+(enchant: ?Page, $storyStyle)]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;Q1&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="34" name="Q3" tags="" position="1050,3077" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[💡 Manche geben alles in ihrer Bio an: Name, Alter, Schule, Vereine, Snapchat-Name und den Wohnort.
 Sei besser vorsichtig, denn deine Bio ist für jeden öffentlich, egal ob dein Profil privat ist oder nicht!
 [[Weiter-&gt;S15]]
 (set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
-(enchant: ?Page, $storyStyle)]</tw-passagedata><tw-passagedata pid="36" name="S15" tags="" position="901,3267" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
+(enchant: ?Page, $storyStyle)]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;Q1&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="35" name="S15" tags="" position="898,3269" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 Kim stellt ein Profilbild ein und ergänzt ihre Bio. Als Profilbild hat sie ein Foto von sich im Urlaub ausgewählt.
 Man sieht sie aus der Ferne, wie sie auf das Meer blickt. So hat sie zwar ein persönliches Bild von sich, allerdings ohne zu viel preiszugeben. 
@@ -327,7 +367,8 @@ Für ihre Bio wählt sie drei Fakten über sich, ihr Alter, ihr Hobby - Fußball
 &lt;/style&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/GS4.jpg&quot;\&gt;
 &lt;/div&gt;
-[[Weiter-&gt;S16]]]</tw-passagedata><tw-passagedata pid="37" name="S16" tags="" position="900,3443" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Kim: „Wie cool jetzt hab ich auch ein Profil!&quot;
+[[Weiter-&gt;S16]]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S15&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="36" name="S16" tags="" position="900,3443" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Kim: „Wie cool jetzt hab ich auch ein Profil!&quot;
 Matheo: „Folg mir auf Instagram, ich heiße &quot;matheoxambrosi&quot;,  dann können wir zusammen eine Story posten.&quot; 
 Laila: „Jaa gute Idee! Und vergess nicht uns zu markieren.&quot; 
 Kim: „Und den Standort kann man auch angeben.&quot;
@@ -345,12 +386,12 @@ Vielleicht bekommt er dadurch noch mehr Follower?
 (set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 [[Weiter-&gt;S17]]]
-</tw-passagedata><tw-passagedata pid="38" name="S17" tags="" position="896,3566" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S16&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="37" name="S17" tags="" position="896,3565" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 Was ist eure Meinung dazu?
 [[Merkkasten Standort -&gt; Merkkasten1]]
 [[Weiter-&gt;isc1]]]
-</tw-passagedata><tw-passagedata pid="39" name="S18" tags="" position="900,3718" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S17&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="38" name="S18" tags="" position="900,3718" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Zuhause angekommen, legt sich Kim erstmal auf ihr Bett und hört ein Hörbuch. Doch dann ertönt ein unbekannter Ton und auf ihrem Display erscheint eine Nachricht. &quot;lu.vfb93 möchte dir folgen&quot; 
 Kim ist neugierig und schreibt ihren zwei Freunden in der Whatsappgruppe. Sie erkundigt sich bei ihnen, ob sie das Profil kennen. Keiner der beiden Freunde kennt jemanden, der so auf Instagram heißt. Sie fangen an, darüber zu diskutieren, ob Kim die Freundschafsanfrage annehmen soll?]
@@ -362,14 +403,15 @@ Kim ist neugierig und schreibt ihren zwei Freunden in der Whatsappgruppe. Sie er
 &lt;img src=https://github.com/interaktiveGeschichte/Geschichte/blob/main/Anfrage%20Insta.jpeg?raw=true\&gt;
 &lt;/div&gt;
 [[Weiter-&gt;S19]]
-</tw-passagedata><tw-passagedata pid="40" name="S19" tags="" position="901,3864" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S18&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="39" name="S19" tags="" position="900,3865" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 Sollte ich jede Freundschaftsanfrage annehmen?
 Was meint ihr?
 [[- Klar, je mehr Follower desto besser-&gt;Q4]]
 [[- Nein, das könnten auch komische Leute sein-&gt;Q5]]
 [[- Ja, auf Instagram ist niemand Fake-&gt;Q6]]
-[[Weiter-&gt;S20]]]</tw-passagedata><tw-passagedata pid="41" name="S20" tags="" position="901,4016" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+[[Weiter-&gt;S20]]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S19&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="40" name="S20" tags="" position="901,4016" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 Da sie nicht weiß, wer sich hinter der Anfrage verbirgt, nimmt sie diese nicht an. Schließlich könnte es auch ein Fake-Account sein.
 Wie erkenne ich mögliche Fake-Accounts?
@@ -377,17 +419,17 @@ Wie erkenne ich mögliche Fake-Accounts?
 [[- Sie liken alle meine Beiträge-&gt;Q9]]
 [[- Das Profil ist recht neu &amp; hat keine oder wenige Posts-&gt;Q8]]]
 
-</tw-passagedata><tw-passagedata pid="42" name="Q4" tags="" position="1222,3769" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S20&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="41" name="Q4" tags="" position="1222,3769" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 💡 Du kannst dir nicht sicher sein, wer in sozialen Netzwerken unterwegs ist. Es ist also besser, nur Anfragen von Personen anzunehmen, die du auch im echten Leben bereits kennst.
-[[Weiter-&gt;S20]]]</tw-passagedata><tw-passagedata pid="43" name="Q5" tags="" position="1238,3874" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+[[Weiter-&gt;S20]]]</tw-passagedata><tw-passagedata pid="42" name="Q5" tags="" position="1238,3874" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 Du hast Recht! Man kann sich nie sicher sein, dass es sich um die Person handelt, für die sie sich ausgibt
 [[Weiter-&gt;S20]]]
-</tw-passagedata><tw-passagedata pid="44" name="Q6" tags="" position="1234,3976" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+</tw-passagedata><tw-passagedata pid="43" name="Q6" tags="" position="1234,3976" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 💡 Du kannst dir nicht sicher sein, wer in sozialen Netzwerken unterwegs ist. Es ist also besser, nur Anfragen von Personen anzunehmen, die du auch im echten Leben bereits kennst.
-[[Weiter-&gt;S20]]]</tw-passagedata><tw-passagedata pid="45" name="S21" tags="" position="891,4392" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+[[Weiter-&gt;S20]]]</tw-passagedata><tw-passagedata pid="44" name="S21" tags="" position="891,4392" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Am nächsten Tag in der Schule...
 Kim setzt sich gerade an ihren Platz - als ihr Mitschüler Lukas ganz unerwartet auf sie zukommt. Sonst reden die beiden nicht so viel miteinander - umso größer also die Verwirrung. Er spricht sie an: „Hey Kim, ich hab gestern in Matheos Story gesehen, dass du jetzt auch Instagram hast. Ich habe dir natürlich direkt eine Freundschaftsanfrage geschickt, aber du hast sie leider noch gar nicht angenommen? Warum denn nicht? &quot;
@@ -400,29 +442,32 @@ Kim: „Oh, ich wusste nicht, dass du das bist. Das hätte ich nicht erahnen kö
 &lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/GS5.JPG&quot;\&gt;
 &lt;/div&gt;
 [[Weiter-&gt;S22]]
-</tw-passagedata><tw-passagedata pid="46" name="Q7" tags="" position="745,4175" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S21&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="45" name="Q7" tags="" position="744,4175" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 
 (enchant: ?Page, $storyStyle)
 Überleg nochmal. 
 💡 Fake-Accounts haben keine oder nur sehr wenig Beiträge. Irgendjemand gibt sich als Person aus, die er oder sie gar nicht ist. Sie kopieren Fotos von anderen Profilen oder nehmen einfach irgendwelche Bilder von Google. So oder so: Stelle dein Profil lieber auf privat!
 
-[[Zurück-&gt;S20]]]</tw-passagedata><tw-passagedata pid="47" name="Q8" tags="" position="1022,4174" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[[[Weiter-&gt;S21]]
+[[Zurück-&gt;S20]]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;Q7&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="46" name="Q8" tags="" position="1022,4174" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[[[Weiter-&gt;S21]]
 (set: $storyStyle to (background: #d3f9d8 ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 Richtig!
 💡 Fake-Accounts haben keine oder nur sehr wenig Beiträge. Irgendjemand gibt sich als Person aus, die er oder sie gar nicht ist. Sie kopieren Fotos von anderen Profilen oder nehmen einfach irgendwelche Bilder von Google. So oder so: Stelle dein Profil lieber auf privat!]
-</tw-passagedata><tw-passagedata pid="48" name="Q9" tags="" position="886,4171" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8) + (color:black) )
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;Q7&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="47" name="Q9" tags="" position="894,4173" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: #d3f9d8) + (color:black) )
 
 (enchant: ?Page, $storyStyle)
 
 Überleg nochmal.
 💡 Fake-Accounts haben keine oder nur sehr wenig Beiträge. Irgendjemand gibt sich als Person aus, die er oder sie gar nicht ist. Sie kopieren Fotos von anderen Profilen oder nehmen einfach irgendwelche Bilder von Google. So oder so: Stelle dein Profil lieber auf privat!
-[[Zurück-&gt;S20]]]</tw-passagedata><tw-passagedata pid="49" name="S22" tags="" position="893,4542" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+[[Zurück-&gt;S20]]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;Q7&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="48" name="S22" tags="" position="891,4542" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Nach der Schule schreibt sie eine Nachricht, in der sie sich nochmals entschuldigt: „sorry nochmal, dass ich die Anfrage nicht gleich angenommen habe. Aber ich wusste nicht, dass du das bist.&quot;
 Lukas: „Hei Kim, cool, dass du schreibst.
 Ich verstehe das total, ich würde auch keine unbekannte Freundschaftsanfrage annehmen.&quot;]
-[[Weiter-&gt;S23]]</tw-passagedata><tw-passagedata pid="50" name="S23" tags="" position="892,4712" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Über Instagram lernen sie sich viel besser kennen und verstehen sich total gut. Sie schreiben den ganzen Abend noch miteinander. Lukas und Kim finden viele Gemeinsamkeiten. Es stellt sich heraus, dass beide Fussball spielen und eine Katze als Haustier haben. Kim hätte niemals gedacht, dass man auch über Instagram neue Freunde finden kann. Ohne die Anfrage von Lukas wären die beiden vielleicht niemals ins Gespräch gekommen und es wäre nie eine Freundschaft wie diese entstanden. 
+[[Weiter-&gt;S23]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S22&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="49" name="S23" tags="" position="893,4712" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Über Instagram lernen sie sich viel besser kennen und verstehen sich total gut. Sie schreiben den ganzen Abend noch miteinander. Lukas und Kim finden viele Gemeinsamkeiten. Es stellt sich heraus, dass beide Fussball spielen und eine Katze als Haustier haben. Kim hätte niemals gedacht, dass man auch über Instagram neue Freunde finden kann. Ohne die Anfrage von Lukas wären die beiden vielleicht niemals ins Gespräch gekommen und es wäre nie eine Freundschaft wie diese entstanden. 
 
 3 Wochen später...
 Mittlerweile ist Lukas auch ein Mitglied der WhatsApp Gruppe von Matheo, Laila und Kim. Die Kinder verstehen sich super miteinander und haben sich für den Nachmittag im Frühlingspark verabredet. Sie haben sich noch eine Kugel Eis bei Tonis Eisladen geholt und gehen zu ihrer Lieblingsbank. Von hier aus haben sie einen wunderschönen Blick auf den viel besuchten Park. Rundum zu frieden genießen sie an diesem sonnigen Frühlingstag ihr Eis.]
@@ -434,19 +479,19 @@ Mittlerweile ist Lukas auch ein Mitglied der WhatsApp Gruppe von Matheo, Laila u
 &lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/GS6.JPG&quot;\&gt;
 &lt;/div&gt;
 (set: $storyStyle to (background: white ) + (color:black) )
-(enchant: ?Page, $storyStyle)</tw-passagedata><tw-passagedata pid="51" name="S01" tags="" position="1013,233" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Montag 11:20 Uhr , endlich klingelt es zur Pause. Der Matheunterricht ist geschafft. [[Matheo-&gt;Matheo Steckbrief]], [[Kim-&gt;Kim Steckbrief]] und [[Laila-&gt;Laila Steckbrief]] stürmen aus dem Klassenzimmer, um als erste auf dem Pausenhof zu sein. Sie wollen sich ihren Stammplatz an der Tischtennisplatte sichern. Dort angekommen, tauschen sie sich über ihre Erlebnisse am Wochenende aus.]
+(enchant: ?Page, $storyStyle)
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;S23&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="50" name="S01" tags="" position="1013,233" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Montag 11:20 Uhr , endlich klingelt es zur Pause. Der Matheunterricht ist geschafft. [[Matheo-&gt;Matheo Steckbrief]], [[Kim-&gt;Kim Steckbrief]] und [[Laila-&gt;Laila Steckbrief]] stürmen aus dem Klassenzimmer, um als erste auf dem Pausenhof zu sein. Sie wollen sich ihren Stammplatz an der Tischtennisplatte sichern. Dort angekommen, tauschen sie sich über ihre Erlebnisse am Wochenende aus.]
 [[Weiter-&gt;S1]] 
 (set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 &lt;style&gt; img{ 
-
 	max-width:100%;
 	max-height:100%;
 }
 &lt;/style&gt;
-&lt;img src=&quot;https://github.com/interaktiveGeschichte/Geschichte/blob/main/SchoolSample.png?raw=true&quot;\&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/GS1.jpg&quot;\&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="52" name="isc1" tags="" position="1205,3187" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+</tw-passagedata><tw-passagedata pid="51" name="isc1" tags="" position="1202,3189" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Gehe auf dein Profil und Tippe auf das Menü-Symbol oben rechts. Dort kannst du Einstellungen wählen.]
 &lt;style&gt; img{ 
@@ -456,7 +501,8 @@ Mittlerweile ist Lukas auch ein Mitglied der WhatsApp Gruppe von Matheo, Laila u
 &lt;/style&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/instaps1.jpg&quot;\&gt;
 &lt;/div&gt;
-[[Weiter-&gt;isc2]]</tw-passagedata><tw-passagedata pid="53" name="isc2" tags="" position="1205,3312" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+[[Weiter-&gt;isc2]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;ISC1&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="52" name="isc2" tags="" position="1205,3311" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Klicke dann auf Privatsphäre.]
 &lt;style&gt; img{ 
@@ -466,7 +512,8 @@ Mittlerweile ist Lukas auch ein Mitglied der WhatsApp Gruppe von Matheo, Laila u
 &lt;/style&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/instaps2.jpg&quot;\&gt;
 &lt;/div&gt;
-[[Weiter-&gt;isc3]]</tw-passagedata><tw-passagedata pid="54" name="isc3" tags="" position="1207,3451" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+[[Weiter-&gt;isc3]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;ISC2&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="53" name="isc3" tags="" position="1207,3450" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Wähle unter dem @-Symbol das Feld Erwähnungen.]
 &lt;style&gt; img{ 
@@ -476,7 +523,8 @@ Mittlerweile ist Lukas auch ein Mitglied der WhatsApp Gruppe von Matheo, Laila u
 &lt;/style&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/instaps3.jpg&quot;\&gt;
 &lt;/div&gt;
-[[Weiter-&gt;isc4]]</tw-passagedata><tw-passagedata pid="55" name="isc4" tags="" position="1210,3585" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
+[[Weiter-&gt;isc4]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;ISC3&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="54" name="isc4" tags="" position="1210,3585" size="100,100">(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[Wähle bei „Wer darf dich markieren?“ entweder Personen, denen du folgst oder Niemand. So kann dich keine vollkommen unbekannte Person markieren.]
 &lt;style&gt; img{ 
@@ -486,7 +534,8 @@ Mittlerweile ist Lukas auch ein Mitglied der WhatsApp Gruppe von Matheo, Laila u
 &lt;/style&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/interaktiveGeschichte/Geschichte/main/instaps4.jpg&quot;\&gt;
 &lt;/div&gt;
-[[Weiter-&gt;S18]]</tw-passagedata><tw-passagedata pid="56" name=" Merkkasten1" tags="" position="666,3588" size="100,100">Merkkasten Risiken Standortvermittlung und Werbung
+[[Weiter-&gt;S18]]
+  {(group: &#39;playing&#39;, &#39;stop&#39;)(track: &#39;ISC4&#39;,&#39;play&#39;)}</tw-passagedata><tw-passagedata pid="55" name=" Merkkasten1" tags="" position="666,3588" size="100,100">Merkkasten Risiken Standortvermittlung und Werbung
 Euren Standort preisgeben auf öffentlichen Plattformen birgt immer ein Risiko, so können zum Beispiel auch Personen mit schlechten Absichten herausfinden, wo ihr euch wann aufhaltet. Taggt ihr eure Freunde zusätzlich noch dann ist deren Standort zudem ersichtlich, obwohl deine Freunde das mitunter auch gar nicht wollen. Deshalb ist es wichtig in euren Einstellungen einzusehen wer euch taggen darf und Posts von euch einsehen darf.
 Bei Werbung auf Instagram und anderen Seiten ist auch immer zu beachten, dass die Personen meist dafür Geld bekommen und Werbung nicht die Wahrheit wiederspiegeln muss.
 Die meisten Unternehmen schreiben Influencer:innen ganz genau vor auf welche Weise die Produkte beworben werden sollen. Oft bekommen Sie sogar Skripte mit genauen Sätzen und Anweisungen. 
@@ -499,7 +548,7 @@ Allgemein gilt Werbung muss nicht ehrlich sein und solange diese als Werbung dek
 
 (align:&quot;&lt;==&gt;&quot;)+(box:&quot;X&quot;)[(set: $storyStyle to (background: white ) + (color:black) )
 (enchant: ?Page, $storyStyle)
-[[Zurück-&gt;S17]] </tw-passagedata></tw-storydata>
+[[Zurück-&gt;S17]] </tw-passagedata><tw-passagedata pid="56" name="Untitled Passage" tags="" position="1180,558" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
